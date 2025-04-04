@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(45, 44, 44);
+    height: 800vh;
+}
+h1, h2, p{color: #fff;}
+code{
+    color: rgb(225, 91, 91);
+}

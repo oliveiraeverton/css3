@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(45, 44, 44);
+    height: 800vh;
+}
+h1, h2, p{color: #fff;}
+code{
+    color: rgb(225, 91, 91);
+}
+.pulse{
+    background: none;
+    border: 2px solid;
+    /* margin: 40px; */
+    padding: 15px 40px;
+    color: #ff760c;
+    font-family: sans-serif;
+    transition: 0.25s;
+}
+.pulse:hover, .pulse:focus{
+    color: #fff;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255,255,255, 0);
+    animation: pulsar 1s;
+}
+
+#btn-relative{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+#btn-fixed{
+    position: fixed;
+    top: 450px;
+    left: 107px;
+    width: calc(100px + 38px * 2); /* Largura base + padding horizontal */    
+    box-sizing: border-box; /* Inclui padding e border na largura/altura */
+
+} 
+#btn-sticky{
+    top: 300px;
+    position: sticky;
+}
+
+#btn-absolute-ComDiv{
+    position: absolute;
+    bottom: -199px;
+    left: 0; 
+} 
+#btn-absolute-SemDiv{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+} 
+.elemento-pai{
+    position: relative;
+    background-color: azure;
+    width: 350px;
+    height: 500px;
+    left: 70px;
+    overflow: hidden;
+}
+.elemento-pai:hover #btn-absolute-ComDiv{
+    bottom: 0;
+}
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 0 #ef8f6e
+    }
+}

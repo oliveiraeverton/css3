@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(45, 44, 44);
+    height: 800vh;
+    margin: 0;
+}
+h1, h2, p, li{color: #fff;}
+code{
+    color: rgb(225, 91, 91);
+}
+
+.pulse{
+    background: none;
+    border: 2px solid;
+    /* margin: 40px; */
+    padding: 15px 40px;
+    color: #ff760c;
+    font-family: sans-serif;
+    transition: 0.25s;
+}
+.pulse:hover, .pulse:focus{
+    color: #fff;
+    border-color: #ef8f6e;
+    box-shadow: 0 0 0 15px rgba(255,255,255, 0);
+    animation: pulsar 1s;
+}
+
+.elemento-pai{
+    position: sticky;
+    top: 0;
+    background-color: azure;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.elemento-pai:hover #btn{
+    bottom: 0;
+}
+
+
+#btn{
+    /* position: absolute;
+    bottom: -100px; */
+}
+
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 0 0 #ef8f6e
+    }
+}

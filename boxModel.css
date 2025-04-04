@@ -1,0 +1,11 @@
+.p1{
+    width: 100px;
+    height: 30px;
+    padding: 15px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: #fcf;
+    text-align: center;
+    line-height: 30px; 
+    
+}

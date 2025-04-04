@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>FlexBox</title>
+    </head>
+    <body>
+        <h1>Learn FlexBox</h1>
+
+        <h2>
+            CONTAINER SEM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <div class="container">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <div class="container-flex">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+
+        <h2 style="color: blueviolet; font-size: xx-large">
+            Propriedades para o Container Flex
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-DIRECTION</code> : <code>ROW</code></h3>
+        <div class="container-flex" style="flex-direction: row">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-DIRECTION</code> : <code>ROW-REVERSE</code></h3>
+        <div class="container-flex" style="flex-direction: row-reverse">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-DIRECTION</code> : <code>COLUMN</code></h3>
+        <div class="container-flex" style="flex-direction: column">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-DIRECTION</code> : <code>COLUMN-REVERSE</code></h3>
+        <div class="container-flex" style="flex-direction: column-reverse">
+            <div class="quadrado">1</div>
+            <div class="quadrado">2</div>
+            <div class="quadrado">3</div>
+            <div class="quadrado">4</div>
+            <div class="quadrado">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-WRAP</code> : <code>NOWRAP</code></h3>
+        <div class="container-flex" style="flex-wrap: nowrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-WRAP</code> : <code>WRAP</code></h3>
+        <div class="container-flex" style="flex-wrap: wrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-WRAP</code> : <code>WRAP-REVERSE</code></h3>
+        <div class="container-flex" style="flex-wrap: wrap-reverse">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW WRAP</code></h3>
+        <div class="container-flex" style="flex-flow: row wrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW NOWRAP</code></h3>
+        <div class="container-flex" style="flex-flow: row nowrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW WRAP-REVERSE</code></h3>
+        <div class="container-flex" style="flex-flow: row wrap-reverse">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>COLUMN WRAP</code></h3>
+        <div class="container-flex" style="flex-flow: column wrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>COLUMN WRAP-REVERSE</code></h3>
+        <div class="container-flex" style="flex-flow: column wrap-reverse">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>COLUMN NOWRAP</code></h3>
+        <div class="container-flex" style="flex-flow: column nowrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW-REVERSE WRAP</code></h3>
+        <div class="container-flex" style="flex-flow: row-reverse wrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW-REVERSE NOWRAP</code></h3>
+        <div class="container-flex" style="flex-flow: row-reverse nowrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>ROW-REVERSE WRAP-REVERSE</code></h3>
+        <div class="container-flex" style="flex-flow: row-reverse wrap-reverse">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>COLUMN-REVERSE WRAP</code></h3>
+        <div class="container-flex" style="flex-flow: column-reverse wrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>FLEX-FLOW</code> : <code>COLUMN-REVERSE NOWRAP</code></h3>
+        <div class="container-flex" style="flex-flow: column-reverse nowrap">
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3>
+            <code>FLEX-FLOW</code> : <code>COLUMN-REVERSE WRAP-REVERSE</code>
+        </h3>
+        <div
+            class="container-flex"
+            style="flex-flow: column-reverse wrap-reverse"
+        >
+            <div class="quadrado" style="width: 100px; height: 100px">1</div>
+            <div class="quadrado" style="width: 100px; height: 100px">2</div>
+            <div class="quadrado" style="width: 100px; height: 100px">3</div>
+            <div class="quadrado" style="width: 100px; height: 100px">4</div>
+            <div class="quadrado" style="width: 100px; height: 100px">5</div>
+        </div>
+
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>FLEX-START</code></h3>
+        <div class="container-flex" style="justify-content: flex-start">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>FLEX-END</code></h3>
+        <div class="container-flex" style="justify-content: flex-end">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>CENTER</code></h3>
+        <div class="container-flex" style="justify-content: center">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>SPACE-BETWEEN</code></h3>
+        <div class="container-flex" style="justify-content: space-between">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>SPACE-AROUND</code></h3>
+        <div class="container-flex" style="justify-content: space-around">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>JUSTIFY-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <div class="container-flex" style="justify-content: space-evenly">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>STRETCH</code></h3>
+        <div class="container-flex" style="align-items: stretch">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>FLEX-START</code></h3>
+        <div class="container-flex" style="align-items: flex-start">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>FLEX-END</code></h3>
+        <div class="container-flex" style="align-items: flex-end">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>CENTER</code></h3>
+        <div class="container-flex" style="align-items: center">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>BASELINE</code></h3>
+        <div class="container-flex" style="align-items: baseline">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px">5</div>
+        </div>
+
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+        <hr style="border: 5px solid #000" />
+
+        <h2>
+            A propriedade <code>ALIGN-CONTENT</code> precisa de uma
+            <strong>condição</strong> para funcionar.
+        </h2>
+        <h2>
+            Por controlar as <strong>linhas</strong> é necessário a propriedade
+            <code>FLEX-WRAP</code> com a seguinte delaração
+            <strong>WRAP</strong> ou <strong>WRAP-REVERSE</strong>
+        </h2>
+        <h2>
+            Além disso, se os itens não quebrarem a linha, nada visualmente será
+            feito.
+        </h2>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>STRETCH</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: stretch"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>FLEX-START</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: flex-start"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>FLEX-END</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: flex-end"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>CENTER</code></h3>
+        <div class="container-flex div-prop-wrap" style="align-content: center">
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-BETWEEN</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: space-between"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-AROUND</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: space-around"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> : <code>WRAP</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <div
+            class="container-flex div-prop-wrap"
+            style="align-content: space-evenly"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>STRETCH</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: stretch"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>FLEX-START</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: flex-start"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>FLEX-END</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: flex-end"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>CENTER</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: center"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-BETWEEN</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-between"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-AROUND</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-around"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-evenly"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63; margin-bottom: 40px" />
+        <h2 style="color: blueviolet; font-size: xx-large">
+            Propriedades para os Itens Flexíveis
+        </h2>
+
+        <h2><code>ORDER</code></h2>
+        <h2>
+            Essa propriedade é adicionada a um dos itens do container, e faz com
+            que ele assuma uma posição diferente no container.
+        </h2>
+        <h2>
+            Todos os itens do container são considerador com
+            <code>ORDER</code> : <code>0</code>.
+        </h2>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-evenly"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px">5</div>
+        </div>
+        <h2>ALTERAR o ITEM <code>1</code> com o <code>4</code></h2>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-evenly"
+        >
+            <div class="quadrado prop-wrap item-1" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap item-2" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap item-3" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap item-4" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap item-5" style="height: 100px">5</div>
+        </div>
+
+        <h2>
+            Nesse caso foi necessário definir o <code>ORDER</code> de 3
+            elementos.
+        </h2>
+        <h2>
+            Importante notar que nesse exemplo o <code>WRAP</code> está com a
+            propriedade <code>WRAP-REVERSE</code>.
+        </h2>
+        <h2>A ordem que aparece naturalmente das divs é 4 - 5 - 1 - 2 - 3.</h2>
+        <h2>
+            Mas o ordem considera que eles estão sem essa propriedade
+            <code>WRAP-REVERSE</code>, ou seja, eles estão nas posições 1 - 2 -
+            3 - 4 - 5.
+        </h2>
+        <h2>
+            Isso quer dizer que: colocar na div 4 <code>ORDER</code> :
+            <code>1</code>, não o fará trocar com a posição da div 3, e sim com
+            a div 5.
+        </h2>
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63; margin-bottom: 40px" />
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>WRAP</code> :
+            <code>WRAP-REVERSE</code>
+        </h2>
+        <h3><code>ALIGN-CONTENT</code> : <code>SPACE-EVENLY</code></h3>
+        <h2>Adicionar <code>FLEX-GROW</code> na div 5</h2>
+        <h2>Por se tratar de proporção que ele deverá crescer, 1 = 100%</h2>
+        <div
+            class="container-flex div-prop-wrap-reverse"
+            style="align-content: space-evenly"
+        >
+            <div class="quadrado prop-wrap" style="height: 100px">1</div>
+            <div class="quadrado prop-wrap" style="height: 100px">2</div>
+            <div class="quadrado prop-wrap" style="height: 100px">3</div>
+            <div class="quadrado prop-wrap" style="height: 100px">4</div>
+            <div class="quadrado prop-wrap" style="height: 100px; flex-grow: 1">
+                5
+            </div>
+        </div>
+
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63" />
+        <hr style="border: 5px solid #2abf63; margin-bottom: 40px" />
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>CENTER</code></h3>
+        <h2><code>ALIGN-SELF</code> : <code>FLEX-START</code></h2>
+        <div class="container-flex" style="align-items: center">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px; align-self: flex-start">
+                5
+            </div>
+        </div>
+
+        <h2>
+            CONTAINER COM A PROPRIEDADE <code>DISPLAY</code> : <code>FLEX</code>
+        </h2>
+        <h3><code>ALIGN-ITEMS</code> : <code>CENTER</code></h3>
+        <h2><code>ALIGN-SELF</code> : <code>FLEX-END</code></h2>
+        <div class="container-flex" style="align-items: center">
+            <div class="quadrado" style="height: 100px">1</div>
+            <div class="quadrado" style="height: 100px">2</div>
+            <div class="quadrado" style="height: 100px">3</div>
+            <div class="quadrado" style="height: 100px">4</div>
+            <div class="quadrado" style="height: 100px; align-self: flex-end">
+                5
+            </div>
+        </div>
+    </body>
+</html>

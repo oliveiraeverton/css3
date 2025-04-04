@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Posições</title>
+        <link rel="stylesheet" href="position.css" />
+    </head>
+    <body>
+        <h1>Posicionar Elementos na tela.</h1>
+        <button type="button" class="pulse">Clique</button>
+        <hr />
+        <hr />
+        <h2>Position</h2>
+        <p>Todo elemento tem por padrão com <code>static</code>.</p>
+        <p>
+            Além do <code>static</code>, temos: <code>fixed</code>,
+            <code>absolute</code>, <code>relative</code> e <code>sticky</code>.
+        </p>
+        <h2>Static</h2>
+        <p>
+            Ele está estáticamente da página, o próximo elemento fica organizado
+            de acordo com o display.
+        </p>
+        <p>
+            Com essa propriedade <code>static</code> as propriedades
+            <code>top</code>, <code>right</code>, <code>botton</code> e
+            <code>left</code>.
+        </p>
+        <hr />
+        <hr />
+        <h2>Relative</h2>
+        <p>
+            A partir do fluxo normal do documento, com a propriedade
+            <code>position</code> : <code>relative</code> o botão é descolado a
+            partir deste ponto, ou seja, a posição dele normal do fluxo,
+            considerando o canto superior esquerdo como sua origem.
+        </p>
+        <button type="button" class="pulse" id="btn-relative">
+            Clique-Relative
+        </button>
+        <hr />
+        <hr />
+        <h2>Fixed</h2>
+        <p>
+            Com essa propriedade <code>position</code> : <code>fixed</code> e
+            informando o quanto ele deve se deslocar (<strong
+                >TOP, BOTTON, LEFT e RIGHT</strong
+            >) a origem é o viewport do navegador, iniciando na parte esquerda
+            superior.
+        </p>
+        <p>
+            Elementos com <code>position</code> : <code>fixed</code> saem do
+            fluxo normal do documento e, por padrão, perdem algumas propriedades
+            de dimensionamento que são herdadas ou afetadas pelo contexto dos
+            elementos pais.
+        </p>
+        <button type="button" class="pulse" id="btn-fixed">Clique-Fixed</button>
+        <hr />
+        <hr />
+        <h2>Absolute</h2>
+        <p>
+            Está propriedade faz com que o elemento fique posicionado fixamente
+            em relação ao ancestral mais próximo, e não a sua posição do fluxo,
+            nem a viewport, ou seja, a propriedade <code>position</code> :
+            <code>absolute</code> precisa de um elemento pai para se basear.
+        </p>
+
+        <p>
+            Caso não exista nhenum elemento ancestral posicionado, ele usará o
+            corpo da página como relação. Isso fará com que ele acompanhe o
+            scroll quando a página for rolada.
+        </p>
+        <div class="elemento-pai">
+            <button type="button" class="pulse" id="btn-absolute-ComDiv">
+                Clique-Absolute-ComDiv
+            </button>
+        </div>
+
+        <button type="button" class="pulse" id="btn-absolute-SemDiv">
+            Clique-Absolute-SemDiv
+        </button>
+        <hr />
+        <hr />
+        <h2>Sticky</h2>
+        <p>
+            Esta posição faz com que o elemento se comporte como
+            <code>relative</code> e <code>fixed</code> em determinados momentos.
+        </p>
+        <p>
+            Ele é posicionado em relação até que encontre uma determinada
+            posição na janela de exibição e passe a se comportar como fixo.
+        </p>
+        <button type="button" class="pulse" id="btn-sticky">
+            Clique-Sticky
+        </button>
+    </body>
+</html>
